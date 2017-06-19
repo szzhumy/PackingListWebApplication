@@ -1,0 +1,80 @@
+body {
+    background-color: #FFF;
+    font-family: 'Raleway', sans-serif;
+}
+
+#Cover {
+    height: 1000px;
+    position: relative;
+    top: -120px;
+    width: 100%;
+    background-image: url(../img/front_travel.jpg);
+    background-repeat: no-repeat;  
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+.Navigation {
+  background-color: rgba(255, 255, 255, 0.9);
+  overflow-y: auto;
+  position: fixed;
+  top: 0;
+  text-align: center;
+  width: 100%;
+  z-index: 1;
+}
+
+.Cover-content {
+    margin: 0 auto;
+    top: 400px;
+    width: 70%;
+    position:relative;
+    text-align: center;
+}
+
+ul {
+   padding: 0; 
+}
+
+.Navigation li {
+    color: black;
+    display: inline-block;
+    font-size: 18px;
+    margin: 18px 25px;
+    text-transform: uppercase;  
+    text-decoration: none;
+}
+
+.Navigation a {
+    text-decoration: none;
+}
+
+#Logo{
+    color: #FF6666;
+    font-size: 40px;
+    padding: 0px 55px;
+}
+
+h1 {
+    color: white;
+    font-size: 45px;
+    text-align: center;
+}
+
+h2{
+    color: white;
+    font-size: 40px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.clickButton {
+    background-color: #FF6666;
+    color:white;
+    font-size: 28px;
+    padding: 18px;
+    text-decoration: none;
+}

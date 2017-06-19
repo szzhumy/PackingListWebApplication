@@ -1,0 +1,69 @@
+body {
+   background-color: #FFF;
+   font-family: 'Raleway', sans-serif;
+}
+
+.Navigation {
+  background-color: rgba(255, 255, 255, 0.9);
+  overflow-y: auto;
+  position: fixed;
+  top: 0;
+  text-align: center;
+  width: 100%;
+  z-index: 1;
+}
+
+.Navigation ul {
+   padding: 0; 
+}
+
+.Navigation li {
+    color: black;
+    display: inline-block; 
+    font-size: 18px;
+    margin: 18px 25px;
+    text-transform: uppercase;  
+    text-decoration: none;
+}
+
+.Navigation a {
+    text-decoration: none;
+}
+
+#Logo{
+    color: #FF6666;
+    font-size: 40px;
+    padding: 0px 55px;
+}
+
+#map {
+    height: 100%;
+    width: 70%;
+    margin: auto;
+}
+
+.intro {
+   background-color: #ebbfbf;
+    margin-top: 150px;
+    height: 250px;
+    width: 100% 
+}
+#intro-content { 
+    color: #2b1a31;
+    text-align: center;
+    font-size: 1.6em;
+    padding: 80px 120px;
+    
+}
+
+.questions {
+    color: #008080;
+    margin: auto;
+    text-align: center;
+    font-size: 1.3em;
+
+}
+
+#placeSearch, #tripDate {
+    width: 400px;
+}

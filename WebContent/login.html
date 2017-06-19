@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>LoginPage</title>
+<link href="https://fonts.googleapis.com/css?family=Abel|Amatic+SC|Raleway:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/create.css">
+        <link rel="stylesheet" type="text/css" href="css/login.css">  
+</head>
+<body>
+<div class="Navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li id="Logo">MY Packing List</li>
+                <li><a href="login.html">Start Your Own List</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        
+        </div>
+<div class="loginQuestions">
+<form method="post" action="Login">
+<div id="existingUser">
+	<p> Welcome back </p>
+	Email:<br><input class="loginSpace" type="text" name="userEmail"><br>
+	Password: <br><input class="loginSpace" type="password" name="psw"><br>
+	<input class="button" type="submit" value="Login"><br>
+</div>
+</form>
+<form method ="post" action="CreateNewUser">
+<div id="newUser">
+	<p> New user register here: </p>
+	First Name:<br><input class="loginSpace" type="text" name="firstName"><br>
+	Last Name:<br><input class="loginSpace" type="text" name="lastName"><br>
+	Email:<br><input class="loginSpace" type="email" name="email"><br>
+	Password:<br><input class="loginSpace" type="password" name="newPsw"><br>
+	Confirm Password:<br><input class="loginSpace" type="password" name="confirmPsw"><br>
+	<input class="button" type="submit" value="Sign Up"><br>
+</div>
+</form>
+</div>
+</body>
+</html>

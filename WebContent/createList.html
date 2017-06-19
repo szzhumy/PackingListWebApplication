@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>Packing List--Create A List</title>
+        <link href="https://fonts.googleapis.com/css?family=Abel|Amatic+SC|Raleway:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/create.css"> 
+    </head>
+    
+<body>
+    <div class="Navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li id="Logo">MY Packing List</li>
+                <li><a href="login.html">Start Your Own List</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        
+        </div>
+    
+    <div class="intro">
+        <p id="intro-content">
+            Before we create your packing list, we will ask you a few questions so that we can suggest you a suitable list. You can customize your packing list after we present you our suggested list.
+        </p>
+    </div>
+    
+    <div class="questions">
+        <form method="post" action ="GetInfoFromForm">
+            <p>
+            1. When is your trip? <br>
+            <input id="tripDate" type="date" name="tripDate" value="" /><br>
+            </p>
+        
+            <p>
+            2. Is this a business trip? <br>
+            <input type="radio" name="isBizTrip" value="yes" />Yes<br>
+            <input type="radio" name="isBizTrip" value="no" />No<br>
+            <input type="radio" name="isBizTrip" value="both" />Both Business and Leisure<br>
+            </p>
+        
+            <p>
+            3. Will this trip involve any outdoor activities?(can choose more than one) <br>
+            <input type="checkbox" name="outdoorActivities" value="water/beach">Water/beach<br>
+            <input type="checkbox" name="outdoorActivities" value="mountains">Mountain<br>
+            <input type="checkbox" name="outdoorActivities" value="no">No particular activities<br>
+            </p>
+
+			<p>
+            4.What transportation will you take for this trip <br>
+            <input type="radio" name="transportation" value="plane">I will fly to the destination<br>
+            <input type="radio" name="transportation" value="car">I will take a road trip<br>
+            <input type="radio" name="transportation" value="cruise">I will take cruise<br>
+            </p> 
+                   
+            <p>
+            5. What is the destination of your trip? <br>
+            <input id="placeSearch" type="text" placeholder="Search and Enter your destination here">    
+            </p>
+            
+            
+    
+            <div id="map"></div>
+            
+            <script>  
+                function initMap() {
+                    /*var map = new google.maps.Map(document.getElementById('map'), {
+                            center: new google.maps.LatLng(36.7783,-119.4179),
+                            zoom: 1
+                            });
+                    
+                    var defaultBounds = new google.maps.LatLng(new google.maps.LatLng(36.7783,-119.4179),
+                                                          new google.maps.LatLng(36.7783,-119.4179));
+                    var options = {
+                       bounds: defaultBounds
+                    };
+                */
+                    var input = document.getElementById('placeSearch');
+                    //map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
+                    //var searchBox = new google.maps.places.SearchBox(input, options);
+                
+                    //map.addListener('bounds_changed', function() {searchBox.setBounds(map.getBounds());});
+                
+                
+                    var autocomplete = new google.maps.places.Autocomplete(input,{types: ['geocode']});
+       
+                }
+        
+            </script>
+            
+            <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBykhRTNIvfeBb-XnDkw3O8igXPhJguvfQ&callback=initMap&libraries=places"
+    async defer></script>
+        
+            <p id="submitButton">
+            <input type="submit" value="Submit"><br>
+            </p>   
+        </form>
+    </div>
+    
+    
+    
+</body>
+</html>

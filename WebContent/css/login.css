@@ -1,0 +1,45 @@
+@CHARSET "UTF-8";
+.loginQuestions {
+	background-color: #ebbfbf;
+	height: 500px;
+	width: 100%;
+	margin-top: 150px;
+}
+
+.loginSpace {
+	width: 350px;
+	height: 30px;
+
+}
+
+.button {
+	background-color: #FF6666;
+	color: white;
+	font-size: 1em;
+	text-align: center;
+	
+}
+
+#existingUser {
+	font-size: 1.2em;
+	float: left;
+	width: 50%;
+
+}
+
+#newUser {
+	font-size: 1.2em;
+	width: 50%;
+	float: right;
+	
+	
+}
+
+#error {
+	font-color: red;
+	margin-top: 200px;
+}
+
+#existingUser div {
+
+}
